@@ -1,0 +1,221 @@
+									  www.cfamily.com
+Database Foundation
+===================
+Filesystem
+==========
+What is File?
+============
+--> is storage unit -- to store the data  permanently in a disk memory.
+--> collection of raw data.
+E.g:- employee.txt
+      employee.csv 
+	  employee.dat 
+	  employee.doc
+	  etc..
+--> Every Operating system has "Filesystem" concept to create a files.	  
+
+How to create files?
+===================
+In Windows Operating System 
+---------------------------
+notepad, notepad++, wordpad, msword, etc..
+
+Linux/Unix,
+----------
+vi,vim,nano,cat,touch,gedit, etc..
+
+Programming Languages
+---------------------
+--> Every Language has files concept to create files.
+C,C++, Java, Python, Scala, etc..
+
+Advantages of Files:-
+===================
+--> Every Operating System has filesystem concept in-built 
+--> We can write data directly using different free softwares like 
+    Windows: notepad, notepad++, wordpad, etc..
+	Linux/Unix: cat,vi,nano etc..
+--> No need to have any specialized skills to write data.	
+--> to perform crud operations we will use programming languages 
+    c -- create -- (create files and write data)
+	r -- read
+	u -- update/modify 
+	d -- delete 
+--> Every language has files concet to perform "crud" operations.	
+
+dis-advantages of files:-
+=======================
+--> We need to know any programming like c,c++,java,python,scala or etc..
+--> We need to write multiple programs for different purposes.
+--> If structure is changed
+    E.g:- initially empno type is int, later we are changing empno to string
+	      salary  -- initially int later we want it as double
+	we need to modify our programs 
+--> If we want more columns, we need to change in many programs.
+--> If you want to change data type 
+    E.g: sal -- int later we want cahnge it to float
+--> For every change in data, we have to change our applications/programs otherwise it will 
+    not work.	
+	
+DBMS -- Database Management System
+==================================
+--> is a collection/set of programs or applications to manage software.
+--> There are many DBMS software available in market. They are:
+Oracle
+MySQL
+Microsoft SQLServer
+IBM DB2
+PostgreSQL
+Sybase
+SQ-Lite
+Informix
+Teradata
+etc..
+
+--> When ever we install DBMS Software some where in harddisk it automatically creates place
+to store the data is called "Database".
+
+--> Every DBMS Software provides user interface to interact with database.
+--> By using Any Programming Language we can interact with DBMS.
+--> Programming Languages like Java, Python, Scala,.Net etc uses Drivers to communicate with 
+    DBMS.
+--> We can also use thirdparty software to communicate with DBMS.
+    E.g:  For Oracle --- Toad, SQL Developer, dbEver, etc..
+          For MySQL  -- WOrkbench, phpMyAdmin, SQLyog, dbEver, etc..
+
+What is Database?
+================	
+--> It is an organized collection of inter-related data.
+        or 
+    It is a collection of structred data.
+        or 
+    Is a collection of tables.
+	
+--> Every database has two types structures. They are 
+1. Logical Structure 
+2. Physical Structure	
+
+Logical Structure:-
+==================
+--> The structure which is not visible in operating system.
+--> Logical structure contains tables,views,sequences, synonyms etc..
+--> Logical structures handled by Database Developers, Database Administrators.
+
+Physical Structure:-
+==================
+--> The structure which is visible in Operating System 
+--> These are handled by Database Administrators.
+	
+DBMS Architecture:
+=================	
+--> ANSI (American National Standard Institute) as established three levels of architecture 
+for DBMS.
+1. Conceptual Level
+2. External Level 
+3. Internal Level or Physical Level 
+
+--> These three levels also called ANSI/SPARC(Standard Planning and Req Commite) architecture
+
+Conceptual Level:-
+================
+--> It describes logical structure of database.
+--> It will not describe how data is going to store in physical storage or in harddisk space.
+--> It will defines what type of data can be stored in database by specifying each column 
+    type of table using datatypes 
+	E.g:- course(cid,cname,duration,fee)
+	cid -- numeric 
+	cname -- string 
+	duration -- floating 
+	fee -- floating
+--> we will create relationships between different tables 
+    students  -- courses
+	trainers -- courses 
+	etc..
+	In Oracle -- Primary Key, Foriegn key
+--> We will define what kind of data cannot be stored 
+    In Oracle -- We have Key Constraints like Primary Key, Check, Unique, etc..)
+	
+External Level:-
+==============
+--> It describes users view of database.
+--> It provides security through views.
+    we are going to create different views for different uses.	
+	
+Internal Level:-
+==============
+--> indexes, cluster are used to manage and control the data in physical storage in harddisk.
+--> Index -- Whenever we add indexs on database then table structure but performance will 
+    improve.
+	
+Data Model:-
+==========
+--> How data is represented at the conceptual level defined by means data model.
+--> In the history of database design there are 3types of data models. they are;
+1. Hierarchical Model.
+2. Network model.
+3. Relational Model.
+
+Hierarchical Model:-
+------------------
+--> It was introduced in 1960's 
+--> In this model data orginized in "tree structure".It is like a table in relational model.
+--> In this model data represents in the form records.
+--> This model is implmented based on one-to-many relationship means one parent record may 
+    have multiple child records.So many child records has one parent.
+--> In this model child records are repeated multiple times. so we can see more duplicates.
+--> Based on this Hierarchical Model, In 1960's IBM implemented "IMS", this uses procedural 
+    language.	
+	
+Network Model:-
+-------------
+--> This model was introduced in 1970's.
+--> This model was defined by CODASYL (Conference on Data System Language) Commitee.
+--> This model has less duplicate data.
+--> In this model relationship implmented based on many-to-many relationship.
+--> In this models also data represents in records format.
+--> In 1970's IBM introduced "IDMS" -- Information Data Management System software.
+--> To operate this model we have to use procedural language.
+
+Relational Model:-
+----------------
+--> In relational model data represents in tables.
+--> It is a collection of relations. relation means table.
+--> A Table is a collection of rows and columns.
+--> In this relational model we have 3 components. They are:
+    1. Collection of object (table,views,indexces,sequences,synonyms,cluster,etc..)
+	2. Set of Operators
+	3. Set of Integrity rules.
+--> This model was invented in 1970's based on E.F Codd written a paper "Relational 
+    Data Model for Large Shared Data Banks"
+--> E.F Codd defined 12 rules for relational models -- Normalization.
+--> We have different Normal Forms like 
+    1NF
+	2NF
+	3NF
+	Boys Codd NF
+	etc..
+--> Based on this paper many organizations implmented DBMS software like 
+    IBM -- DB2
+    Oracle Corporation -- Oracle 
+    Microsoft -- MS SQL Server 
+    etc..	
+	
+
+By
+Akkem Sreenivasulu
+www.cfamily.com 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
